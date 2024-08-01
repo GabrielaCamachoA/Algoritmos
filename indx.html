@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algoritmos</title>
+    <link rel="shortcut icon" href="./img/icons8-dragaminas-100 (1).png" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <header class="navbar">
+        <nav class="container">
+            <img class="logo" src="./img/icons8-dragaminas-100 (4).png" alt="">
+            <h1 class="titulo">Ejercicios de Logica</h1>
+            <ul>
+                <i class="bi bi-list list"></i>
+                <li><a href="#FirstSection" class="sect" data-filter="fact">Factorial</a></li>
+                <li><a href="#SecondSection" class="sect" data-filter="mayor">Número Mayor</a></li>
+                <li><a href="#ThreeSection" class="sect" data-filter="Array">Ordenar</a></li>
+                <li><a href="#FourSection" class="sect" data-filter="Filtrar">Filtrar Número</a></li>
+                <li><a href="#FifthSection" class="sect" data-filter="FiltrarArray">Filtrar Array</a></li>
+                <li><a href="#SixthSection" class="sect" data-filter="Sumar">Suma</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="FirstSection" class="item fact active">
+            <div class="div">
+            <h1>¡Ingresa un número para saber el factorial!</h1>
+            <input type="number" id="factorialInput" placeholder="Factorial">
+            <button onclick="calcularFactorial()">Factorial</button>
+            <div class="resultado" id="resultadoFactorial"></div>
+            </div>
+        </section>
+          <section id="SecondSection" class="item mayor">
+            <div class="div">
+            <h1>¿Cuál es el número mayor?</h1>
+            <input type="text" id="numeroMayorInput" placeholder="Números separados por comas">
+            <button onclick="encontrarMayor()"> Número Mayor</button>
+            <div class="resultado" id="resultadoMayor"></div>
+            </div>
+          </section>
+          <section id="ThreeSection" class="item Array active">
+            <div class="div">
+            <h1>Ordenar Array</h1>
+            <input type="text" id="ordenarArrayInput" placeholder="Números separados por comas">
+            <button onclick="ordenarArray()">Ordenar Array</button>
+            <div class="resultado" id="resultadoArray"></div>
+            </div>
+          </section>
+          <section id="FourSection" class="item Filtrar active">
+            <div class="div">
+            <h1>Número Filtrado</h1>
+            <h2>[1,2,5,8,7]</h2>
+            <input type="number" id="filtrarNumerosValor" placeholder="Valor para Filtrar">
+            <button onclick="filtrarNumeros()">Filtrar</button>
+            <div class="resultado" id="resultadoFiltrar"></div>
+            </div>
+          </section>
+          <section id="FifthSection" class="item FiltrarArray active">
+            <div class="div">
+            <h1>Arreglo Filtrado</h1>
+            <h2>[1,2,5,8,7]</h2>
+            <input type="text" id="filtrarNumerosArreglo" placeholder="Números separados por comas">
+            <button onclick="filtrarNumeros()">Filtrar</button>
+            <div class="resultado" id="resultadoFiltrar2"></div>
+            </div>
+          </section>
+          <section id="SixthSection" class="item  Sumar active">
+            <div class="div">
+            <h1>Suma de todo el arreglo</h1>
+            <input type="text" id="sumarNumerosInput" placeholder="Números separados por comas">
+            <button onclick="sumarTodosLosNumeros()">Sumar Todos Los Números</button>
+            <div class="resultado" id="resultadoSuma"></div>
+            </div>
+          </section>
+
+    </main>
+    
+</body>
+<script src="./app.js"></script>
+</html>
